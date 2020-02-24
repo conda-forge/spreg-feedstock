@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "1.1.1" %}
 
 package:
   name: spreg
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/spreg/spreg-{{ version }}.tar.gz
-  sha256: 005622514b46f70ce0c06efd3fdc6ac85b45e6d083f8554b8a8eac9c469fd405
+  sha256: d42925fb384b8e608db0f8e2c34b0ed177e0ae581a0bf7c6ff9d1798f3fe29ae
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ test:
 about:
   home: https://github.com/pysal/spreg
   license: BSD-3-Clause
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
   summary: PySAL Spatial Econometrics Package
 
 extra:
