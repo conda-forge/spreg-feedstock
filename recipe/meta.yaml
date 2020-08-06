@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2.post1" %}
 
 package:
   name: spreg
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/spreg/spreg-{{ version }}.tar.gz
-  sha256: d42925fb384b8e608db0f8e2c34b0ed177e0ae581a0bf7c6ff9d1798f3fe29ae
+  sha256: a5d41fedaeac6a47b22dee8faa067411dd41040bb290ca1bb9cfa552c3776d44
 
 build:
   number: 0
