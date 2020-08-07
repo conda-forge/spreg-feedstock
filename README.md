@@ -117,6 +117,4 @@ Feedstock Maintainers
 =====================
 
 * [@ocefpaf](https://github.com/ocefpaf/)
-* [@pedrovma](https://github.com/pedrovma)
-* [@jGaboardi](https://github.com/jGaboardi)
 
