@@ -5,11 +5,9 @@ Home: https://github.com/pysal/spreg
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spreg-feedstock/blob/master/LICENSE.txt)
 
 Summary: PySAL Spatial Econometrics Package
-
-
 
 Current build status
 ====================
