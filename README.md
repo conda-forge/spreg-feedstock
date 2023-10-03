@@ -144,6 +144,8 @@ Feedstock Maintainers
 =====================
 
 * [@jGaboardi](https://github.com/jGaboardi/)
+* [@knaaptime](https://github.com/knaaptime/)
+* [@martinfleis](https://github.com/martinfleis/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@pedrovma](https://github.com/pedrovma/)
 

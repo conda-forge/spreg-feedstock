@@ -9,19 +9,21 @@ source:
   sha256: 04de35c1d5f2423bb225b23b9f8ff29207999aeae57cfa56f148cc45c4fda23c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3
+    - python >=3.8
     - pip
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
   run:
-    - python >=3
+    - python >=3.8
     - libpysal
-    - numpy
-    - scipy
+    - numpy >=1.23
+    - scipy >=0.11
 
 test:
   imports:
@@ -38,3 +40,5 @@ extra:
     - ocefpaf
     - pedrovma
     - jGaboardi
+    - knaaptime
+    - martinfleis
