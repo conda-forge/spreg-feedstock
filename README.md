@@ -149,6 +149,3 @@ Feedstock Maintainers
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@pedrovma](https://github.com/pedrovma/)
 
-
-<!-- dummy commit to enable rerendering -->
-
