@@ -1,0 +1,57 @@
+schema_version: 1
+
+context:
+  python_min: "3.12"
+  version: "1.9.1"
+
+package:
+  name: spreg
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/s/spreg/spreg-${{ version }}.tar.gz
+  sha256: 0633a13383700b79a197664db300bfc1b14c4747d770aa961c4f40c7a7577179
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - libpysal >=4.12
+    - numpy >=2.0.0
+    - pandas >=2.3
+    - scikit-learn >=1.5
+    - scipy >=1.14
+
+tests:
+  - python:
+      imports:
+        - spreg
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: PySAL Spatial Econometric Regression in Python
+  license: BSD-3-Clause AND CC0-1.0
+  license_file:
+    - LICENSE.txt
+    - notebooks/LICENSE
+  homepage: https://pypi.org/project/spreg/
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
+    - pedrovma
+    - jGaboardi
+    - knaaptime
+    - martinfleis
