@@ -3,11 +3,11 @@ About spreg-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spreg-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/pysal/spreg
+Home: https://pypi.org/project/spreg/
 
-Package license: BSD-3-Clause
+Package license: BSD-3-Clause AND CC0-1.0
 
-Summary: PySAL Spatial Econometrics Package
+Summary: PySAL Spatial Econometric Regression in Python
 
 Current build status
 ====================
