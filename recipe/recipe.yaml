@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "1.9.1"
+  version: "1.9.2"
 
 package:
   name: spreg
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/spreg/spreg-${{ version }}.tar.gz
-  sha256: 0633a13383700b79a197664db300bfc1b14c4747d770aa961c4f40c7a7577179
+  sha256: ac84ed5058528ce0488d9a918ce3223555c7e035710605a9da6994b9371fd095
 
 build:
   number: 0
